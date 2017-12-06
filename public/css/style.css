@@ -1,0 +1,22 @@
+/* Primary color #209cee */
+/* Success color #23d160 */
+
+#main_menu{
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.050);
+}
+
+.card-head-custom{
+    background: #209cee;
+    padding: 1em;    
+    text-align: center;    
+}
+
+.has-bg-info{
+    background: #209cee;
+}
+.has-bg-success{
+    background: #23d160;
+}
+form > .field:not(:last-child) {
+    margin-bottom: .005rem;
+}
