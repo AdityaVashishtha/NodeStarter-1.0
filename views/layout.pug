@@ -21,10 +21,20 @@ html
           a.navbar-item(href='/')
             | Home
         .navbar-end
-          a.navbar-item(href='/users/login')
-            | Login
-          a.navbar-item(href='/users/signup')
-            | Register
+          if user
+            a.navbar-item(href='/users/logout')
+              | Logout
+          else
+            a.navbar-item(href='/users/login')
+              | Login
+            a.navbar-item(href='/users/signup')
+              | Register
+    != messages('message', locals)
+    .container.is-one-third.column
+      if errors
+        each error, i in errors         
+          div(class="notification is-danger")  #{error.msg}
+            button.delete
     block content
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js', type='text/javascript')
     script(src='/js/main.js', type='text/javascript')

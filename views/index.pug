@@ -5,5 +5,6 @@ block content
         section.hero.is-info
             div.hero-body
                 div.container
-                    h1.title Home Page
-                    h2.subtitle Replace this Page with your home page text
+                    if user
+                        h1.title #{user.name}'s  Home
+                        h2.subtitle Replace this Page with your home page text
