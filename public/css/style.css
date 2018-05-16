@@ -1,16 +1,19 @@
-/* Primary color #209cee */
+/* Primary color #009CDE */
 /* Success color #23d160 */
 /* Danger color #ff3860 */
+body {
+    //background: #ffbc6b;
+}
 #main_menu{
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.050);
 }
 .card-head-custom{
-    background: #209cee;
+    background: #009CDE;
     padding: 1em;    
     text-align: center;    
 }
 .has-bg-info{
-    background: #209cee;
+    background: #009CDE;
 }
 .has-bg-success{
     background: #23d160;
